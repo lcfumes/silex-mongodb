@@ -6,7 +6,6 @@ use Silex\Application;
 use Symfony\Component\HttpFoundation\Response;
 use Silex\ControllerProviderInterface;
 use Domain\Repositories\ElasticSearchClientRepository;
-use Domain\Services\ElasticSearchClientService;
 
 class IndexController implements ControllerProviderInterface
 {
@@ -15,15 +14,15 @@ class IndexController implements ControllerProviderInterface
     {
         $controller = $app['controllers_factory'];
 
-        $controller->get("/", ['\Controllers\IndexController', 'indexAction'])
+        $controller->get("/", [$this, 'indexAction'])
             ->method('GET')
             ->bind('index');
 
-        $controller->get("create", ['\Controllers\IndexController', 'createAction'])
+        $controller->get("create", [$this, 'createAction'])
             ->method('GET')
             ->bind('index.create');
 
-        $controller->get("search", ['\Controllers\IndexController', 'searchAction'])
+        $controller->get("search", [$this, 'searchAction'])
             ->method('GET')
             ->bind('index.search');
 
