@@ -1,0 +1,18 @@
+mongodbpoc:
+    build: "./docker/"
+    ports:
+        - "80:80"
+    volumes:
+        - ./docker/web.conf:/etc/nginx/sites-available/default
+        - ./:/catalog
+    environment:
+        - VIRTUAL_HOST=mongopoc.dev
+
+mongo:
+    image: mongo:latest
+    ports:
+        - "27017:27017"
+    volumes:
+        - ./:/catalog
+    environment:
+        - VIRTUAL_HOST:mongodb.dev

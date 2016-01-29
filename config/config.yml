@@ -1,0 +1,8 @@
+elasticsearch-server:
+    - host: elasticsearch.dev.io 
+      port: 9200
+
+elasticsearch-data:
+    shards: 5
+    replica: 0
+
