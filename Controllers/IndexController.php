@@ -5,7 +5,6 @@ namespace Controllers;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Response;
 use Silex\ControllerProviderInterface;
-use Domain\Repositories\ElasticSearchClientRepository;
 
 class IndexController implements ControllerProviderInterface
 {

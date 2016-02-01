@@ -1,10 +1,8 @@
-elasticsearch-server:
-    - host: localhost
-      port: 9200
-    - host: localhost
-      port: 9400
-
-elasticsearch-data:
-    shards: 5
-    replica: 1
-
+doctrine_mongodb:
+    connections:
+        server: mongodb://mongodb.dev:27017
+        options: {}
+    database: clients
+    document_managers:
+        default:
+            auto_mapping: true

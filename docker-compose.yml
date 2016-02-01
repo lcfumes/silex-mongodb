@@ -7,6 +7,8 @@ mongodbpoc:
         - ./:/catalog
     environment:
         - VIRTUAL_HOST=mongopoc.dev
+    links:
+        - mongo:mongodb.dev
 
 mongo:
     image: mongo:latest

@@ -11,5 +11,5 @@ use Symfony\Component\Console\Application;
 
 $console = new Application();
 
-$console->add(new \Commands\Clients\CreateIndexCommand());
+//$console->add(new \Commands\Clients\CreateIndexCommand());
 $console->run();

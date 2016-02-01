@@ -11,7 +11,7 @@
 
     <div id="msg-success" class="alert alert-success fade in" style="display: none;">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Success!</strong> The user was registered in the Elasticsearch.
+        <strong>Success!</strong> The user was registered in the MongoDB.
     </div>
 
     <div class="jumbotron">

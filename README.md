@@ -1,12 +1,12 @@
-[![Build Status](https://travis-ci.org/lcfumes/php-silex-elasticsearch.svg)](https://travis-ci.org/lcfumes/php-silex-elasticsearch)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lcfumes/php-silex-elasticsearch/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lcfumes/php-silex-elasticsearch/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/lcfumes/php-silex-elasticsearch/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/lcfumes/php-silex-elasticsearch/?branch=master)
+[![Build Status](https://travis-ci.org/lcfumes/php-silex-mongodb.svg)](https://travis-ci.org/lcfumes/php-silex-mongodb)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lcfumes/php-silex-mongodb/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lcfumes/php-silex-mongodb/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/lcfumes/php-silex-mongodb/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/lcfumes/php-silex-mongodb/?branch=master)
 
 ## Instalation
 
 
-# php-silex-elasticsearch
-Silex with Elasticsearch
+# Silex with MongoDB 
+Silex with MongoDB 
 
 ## Docker ##
 
@@ -50,13 +50,13 @@ chmod +x /usr/local/bin/docker-compose
 
 ## To Run ##
 ```
-/webproject/vendor/lcfumes/docker/docker-compose up
+/webproject/docker-compose up
 ```
 
 ## To Stop ##
 
 ```
-/webproject/vendor/lcfumes/docker/docker-compose stop
+/webproject/docker-compose stop
 ```
 
 
@@ -67,33 +67,14 @@ add in
 ```
 sudo vim /etc/hosts
 
-127.0.0.1 webproject.dev.io
-127.0.0.1 elasticsearch.dev.io
-127.0.0.1 database.dev.io
+127.0.0.1 mongopoc.dev 
+127.0.0.1 mongodb.dev
 ```
 
 ## web ##
 
 ```
-http://webpŕoject.dev
-```
-
-## database ##
-
-```
-mysql -uroot -proot -hdatabase.dev
-```
-
-## elasticsearch ##
-
-Plugins 
- - HEAD
- - HQ
-
-```
-http://elasticsearch.dev.io:9200/_plugin/head
-
-http://elasticsearch.dev.io:9200/_plugin/HQ
+http://mongoproc.dev
 ```
 
 Contact: Luiz Fumes <lcfumes@gmail.com>

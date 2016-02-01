@@ -9,6 +9,8 @@ use Silex\Provider\ServiceControllerServiceProvider;
 use Symfony\Component\Yaml\Parser;
 use Silex\Application as SilexApplication;
 
+use Knp\Silex\ServiceProvider\DoctrineMongoDBServiceProvider;
+
 class Application extends SilexApplication {
 
     public function __construct()
@@ -29,7 +31,6 @@ class Application extends SilexApplication {
 
     public function registerProviders()
     {
-        $this->register(new \Silex\Provider\ServiceControllerServiceProvider());
         $this->register(new \Provider\Service\ControllerProviders());
         $this->register(new \Silex\Provider\SwiftmailerServiceProvider());
         $this->register(new \Silex\Provider\ValidatorServiceProvider());

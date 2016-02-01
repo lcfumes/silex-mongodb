@@ -1,8 +1,9 @@
 {
-    "name": "lcfumes/elasticsearch",
+    "name": "lcfumes/silexmongodb",
     "license": "MIT",
     "type": "project",
     "require": {
+        "php": "^5.5 || ^7.0",
         "silex/silex": "~1.3",
         "symfony/config": "~2.6",
         "symfony/yaml": "~2.6",
@@ -15,8 +16,7 @@
         "symfony/config": "^2.7",
         "symfony/translation": "^2.7",
         "symfony/templating": "~2.0",
-        "doctrine/mongodb": "~1.2",
-        "doctrine/mongodb-odm": "1.0.4"
+        "mongodb/mongodb":"^1.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "@stable",
