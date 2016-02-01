@@ -1,12 +1,14 @@
 <?php
 
-namespace Domain\Collectors;
+namespace app\Domain\Collectors;
+
+use app\Domain\Entities\ClientEntity;
 
 class ClientCollector extends \SplObjectStorage
 {
     public function add($clientEntity)
     {
-        if (!$clientEntity instanceof \Domain\Entities\ClientEntity) {
+        if (!$clientEntity instanceof ClientEntity) {
             throw new \InvalidArgumentException('Invalid Argument to ClientCollector');
         }
         $this->attach($clientEntity);

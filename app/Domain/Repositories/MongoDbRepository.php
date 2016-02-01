@@ -1,6 +1,8 @@
 <?php
 
-namespace Domain\Repositories;
+namespace app\Domain\Repositories;
+
+use app\Domain\Entities\ClientEntity;
 
 class MongoDbRepository extends AbstractMongoDbRepository
 {
@@ -14,7 +16,7 @@ class MongoDbRepository extends AbstractMongoDbRepository
      *
      * @return false | \MongoDB\InsertOneResult
      */
-    public function save(\Domain\Entities\ClientEntity $client)
+    public function save(ClientEntity $client)
     {
         try {
             return $this->mongoCollection->insertOne($client->toArray());
@@ -23,7 +25,7 @@ class MongoDbRepository extends AbstractMongoDbRepository
         }
     }
 
-    public function search(\Domain\Entities\ClientEntity $client)
+    public function search(ClientEntity $client)
     {
         $search = [];
         if (strlen($client->getFirstName()) > 0) {

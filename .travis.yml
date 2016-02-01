@@ -12,7 +12,7 @@ before_script:
   - php composer.phar --dev install
 
 script:
-  - vendor/bin/php-cs-fixer fix -v --dry-run src/
+  - vendor/bin/php-cs-fixer fix -v --dry-run app/
   - vendor/bin/phpunit -c phpunit.xml.dist --colors --coverage-clover=build/logs/clover.xml
 
 after_script:

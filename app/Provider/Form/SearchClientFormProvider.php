@@ -1,13 +1,11 @@
 <?php
 
-namespace Provider\Form;
+namespace app\Provider\Form;
 
-use Symfony\Component\Validator\Constraints;
 use Silex\Application;
 
 class SearchClientFormProvider
 {
-
     private $app;
 
     public function __construct(Application $app)
@@ -32,5 +30,4 @@ class SearchClientFormProvider
             ->add('age', 'text', ['required' => false])
             ->getForm();
     }
-
 }

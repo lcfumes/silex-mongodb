@@ -18,7 +18,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <directory>./Domain</directory>
+            <directory>./app</directory>
         </whitelist>
     </filter>
     <logging>

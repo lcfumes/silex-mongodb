@@ -1,10 +1,10 @@
 <?php
 
-namespace Domain\Services;
+namespace app\Domain\Services;
 
-use Domain\Collectors\ClientCollector;
-use Domain\Entities\ClientEntity;
-use Domain\Repositories\MongoDbRepository;
+use app\Domain\Collectors\ClientCollector;
+use app\Domain\Entities\ClientEntity;
+use app\Domain\Repositories\MongoDbRepository;
 
 class MongoDbService
 {

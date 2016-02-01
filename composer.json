@@ -27,11 +27,7 @@
             "": "src/"
             },
         "psr-4": {
-            "app\\": "app",
-            "Controllers\\": "Controllers",
-            "Provider\\": "Provider",
-            "Domain\\": "Domain",
-            "Commands\\": "Commands"
+            "app\\": "app"
         }
     }
 }

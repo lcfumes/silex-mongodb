@@ -1,14 +1,14 @@
 <?php
 
-use Domain\Collectors\ClientCollector;
-use Domain\Entities\ClientEntity;
+use app\Domain\Collectors\ClientCollector;
+use app\Domain\Entities\ClientEntity;
 
 class ClientCollectorTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @expectedException               InvalidArgumentException
      * @expectedExceptionMessage  Invalid Argument to ClientCollector
-     * @cover \Domain\Collectors\ClientCollector:attach
+     * @cover \app\Domain\Collectors\ClientCollector:attach
      */
     public function testAttachClientWhenParameterIsntClientEntity()
     {
@@ -17,7 +17,7 @@ class ClientCollectorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @cover \Domain\Collectors\ClientCollector:attach
+     * @cover \app\Domain\Collectors\ClientCollector:attach
      */
     public function testAttachClientWhenParameterIsClientEntity()
     {
@@ -34,8 +34,8 @@ class ClientCollectorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @cover \Domain\Collectors\ClientCollector:attach
-     * @cover \Domain\Collectors\ClientCollector:toArray
+     * @cover \app\Domain\Collectors\ClientCollector:attach
+     * @cover \app\Domain\Collectors\ClientCollector:toArray
      */
     public function testGetCollectionMustReturnArray()
     {

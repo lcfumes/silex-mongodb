@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="PHP Silex with MongoDb" tests="5" assertions="5" failures="0" errors="0" time="0.012817">
-    <testsuite name="ClientCollectorTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Collectos/ClientCollectorTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.008938">
-      <testcase name="testAttachClientWhenParameterIsntClientEntity" class="ClientCollectorTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Collectos/ClientCollectorTest.php" line="13" assertions="2" time="0.004099"/>
-      <testcase name="testAttachClientWhenParameterIsClientEntity" class="ClientCollectorTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Collectos/ClientCollectorTest.php" line="22" assertions="0" time="0.002327"/>
-      <testcase name="testGetCollectionMustReturnArray" class="ClientCollectorTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Collectos/ClientCollectorTest.php" line="40" assertions="1" time="0.002512"/>
+  <testsuite name="PHP Silex with MongoDb" tests="5" assertions="5" failures="0" errors="0" time="0.009238">
+    <testsuite name="ClientCollectorTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Collectos/ClientCollectorTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.006320">
+      <testcase name="testAttachClientWhenParameterIsntClientEntity" class="ClientCollectorTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Collectos/ClientCollectorTest.php" line="13" assertions="2" time="0.002914"/>
+      <testcase name="testAttachClientWhenParameterIsClientEntity" class="ClientCollectorTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Collectos/ClientCollectorTest.php" line="22" assertions="0" time="0.001586"/>
+      <testcase name="testGetCollectionMustReturnArray" class="ClientCollectorTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Collectos/ClientCollectorTest.php" line="40" assertions="1" time="0.001820"/>
     </testsuite>
-    <testsuite name="ClientEntityTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Entity/ClientEntityTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.003879">
-      <testcase name="testSetData" class="ClientEntityTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Entity/ClientEntityTest.php" line="15" assertions="1" time="0.001878"/>
-      <testcase name="testGetData" class="ClientEntityTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Entity/ClientEntityTest.php" line="44" assertions="1" time="0.002001"/>
+    <testsuite name="ClientEntityTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Entity/ClientEntityTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.002918">
+      <testcase name="testSetData" class="ClientEntityTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Entity/ClientEntityTest.php" line="15" assertions="1" time="0.001324"/>
+      <testcase name="testGetData" class="ClientEntityTest" file="/home/lcfumes/www/silex-mongodb/tests/Domain/Entity/ClientEntityTest.php" line="44" assertions="1" time="0.001594"/>
     </testsuite>
   </testsuite>
 </testsuites>

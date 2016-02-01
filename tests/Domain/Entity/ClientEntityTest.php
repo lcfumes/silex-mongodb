@@ -1,16 +1,16 @@
 <?php
 
-use Domain\Entities\ClientEntity;
+use app\Domain\Entities\ClientEntity;
 
 class ClientEntityTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @covers \Domain\Entities\ClientEntity::setId
-     * @covers \Domain\Entities\ClientEntity::setFirstName
-     * @covers \Domain\Entities\ClientEntity::setLastName
-     * @covers \Domain\Entities\ClientEntity::setEmail
-     * @covers \Domain\Entities\ClientEntity::setAge
-     * @covers \Domain\Entities\ClientEntity::toArray
+     * @covers \app\Domain\Entities\ClientEntity::setId
+     * @covers \app\Domain\Entities\ClientEntity::setFirstName
+     * @covers \app\Domain\Entities\ClientEntity::setLastName
+     * @covers \app\Domain\Entities\ClientEntity::setEmail
+     * @covers \app\Domain\Entities\ClientEntity::setAge
+     * @covers \app\Domain\Entities\ClientEntity::toArray
      */
     public function testSetData()
     {
@@ -34,12 +34,12 @@ class ClientEntityTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers \Domain\Entities\ClientEntity::getId
-     * @covers \Domain\Entities\ClientEntity::getFirstName
-     * @covers \Domain\Entities\ClientEntity::getLastName
-     * @covers \Domain\Entities\ClientEntity::getEmail
-     * @covers \Domain\Entities\ClientEntity::getAge
-     * @covers \Domain\Entities\ClientEntity::toArray
+     * @covers \app\Domain\Entities\ClientEntity::getId
+     * @covers \app\Domain\Entities\ClientEntity::getFirstName
+     * @covers \app\Domain\Entities\ClientEntity::getLastName
+     * @covers \app\Domain\Entities\ClientEntity::getEmail
+     * @covers \app\Domain\Entities\ClientEntity::getAge
+     * @covers \app\Domain\Entities\ClientEntity::toArray
      */
     public function testGetData()
     {

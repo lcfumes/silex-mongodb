@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Entities;
+namespace app\Domain\Entities;
 
 class ClientEntity
 {
