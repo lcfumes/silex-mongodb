@@ -18,14 +18,14 @@ class MongoDbRepository extends AbstractMongoDbRepository
     {
         try {
             return $this->mongoCollection->insertOne($client->toArray());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             return false;
         }
     }
 
     public function search(\Domain\Entities\ClientEntity $client)
     {
-        $search = null;
+        $search = [];
         if (strlen($client->getFirstName()) > 0) {
             $search['first_name'] = $client->getFirstName();
         }
