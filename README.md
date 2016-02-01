@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/lcfumes/php-silex-mongodb.svg)](https://travis-ci.org/lcfumes/php-silex-mongodb)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lcfumes/php-silex-mongodb/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lcfumes/php-silex-mongodb/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/lcfumes/php-silex-mongodb/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/lcfumes/php-silex-mongodb/?branch=master)
+[![Build Status](https://travis-ci.org/lcfumes/silex-mongodb.svg?branch=master)](https://travis-ci.org/lcfumes/silex-mongodb.svg?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lcfumes/silex-mongodb/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lcfumes/silex-mongodb/badges/quality-score.png?b=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/lcfumes/silex-mongodb/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/lcfumes/silex-mongodb/badges/coverage.png?b=master)
 
 ## Instalation
 
